@@ -175,16 +175,18 @@ APP_NAME = "AvaMail"
    3. Select **Create Custom Token**
    4. Add the following permissions:
 
-   | Permission | Access Level | Description |
-   |------------|--------------|-------------|
-   | Zone / Zone | Read | List and read zones |
-   | Zone / Zone | Edit | Create zones (if domain not yet added) |
-   | Zone / DNS | Read | Read DNS records |
-   | Zone / DNS | Edit | Create/modify DNS records |
-   | Zone / Email Routing Rules | Read | Read email routing rules |
-   | Zone / Email Routing Rules | Edit | Create/modify routing rules |
-   | Account / Email Routing Addresses | Read | Read destination addresses |
-   | Account / Email Routing Addresses | Edit | Create destination addresses |
+   **Account Permissions:**
+   | Permission | Access Level |
+   |------------|--------------|
+   | Email Routing Addresses | Edit |
+
+   **Zone Permissions:**
+   | Permission | Access Level |
+   |------------|--------------|
+   | Zone | Read |
+   | DNS | Edit |
+   | Email Routing Rules | Edit |
+   | Zone Settings | Edit |
 
    5. Set **Zone Resources** to: `Include` → `All zones` (or select specific zone)
    6. Set **Account Resources** to: `Include` → your account
